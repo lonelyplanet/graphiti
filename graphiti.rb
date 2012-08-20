@@ -40,6 +40,7 @@ class Graphiti < Sinatra::Base
     set :haml, :format => :html5
     set :scss, Compass.sass_engine_options
     set :method_override, true
+    set :auto_refresh, { "interval" => 500000 }
     Graph.redis = settings.redis_url
     Dashboard.redis = settings.redis_url
     Metric.redis = settings.redis_url
