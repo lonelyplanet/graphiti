@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/eventmachine/eventmachine.git
+  revision: 9473a1b181ed1997e3156d960b2bb2783f508191
+  specs:
+    eventmachine (1.0.0.rc.4)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -14,7 +20,6 @@ GEM
     downlow (0.1.4)
       archive-tar-minitar (>= 0.5.2)
       rubyzip (>= 0.9.4)
-    eventmachine (0.12.10)
     ffi (1.0.11)
     fssm (0.2.9)
     haml (3.1.6)
@@ -111,6 +116,7 @@ PLATFORMS
 DEPENDENCIES
   closure-compiler
   compass
+  eventmachine!
   haml
   jim
   minitest

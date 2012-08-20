@@ -14,6 +14,7 @@ gem 'haml'
 gem 'typhoeus'
 gem 'yajl-ruby'
 gem 'pony'
+gem "eventmachine", git: "https://github.com/eventmachine/eventmachine.git"
 
 group :test do
   gem 'minitest', :require => false
