@@ -46,6 +46,10 @@ class Graphiti < Sinatra::Base
     Metric.redis = settings.redis_url
   end
 
+  use Rack::Auth::Basic, "Restricted Area" do |username, password|
+    [username, password] == ['stats', 'f0sters']
+  end
+
   before do
     S3::Request.logger = logger
   end
