@@ -1,3 +1,6 @@
 require './graphiti'
 
-run Graphiti
+map '/graphiti' do
+	run Graphiti
+end
+
